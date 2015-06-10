@@ -3,12 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-
-#
 with open ("input.txt", "r") as myfile:
-    restext = myfile.read(); 
+    restext = myfile.read()
+    myfile.close()
 
-#print restext
 
 
 def text_to_resdicts(text):
@@ -119,11 +117,8 @@ def plot_bar(title, attributes, entries, colors=None):
             height = rect.get_height()
             ax.text(rect.get_x()+rect.get_width()/2., 1.01*height, '%.1f'%float(height),
                     ha='center', va='bottom')
-def hello():
-    print "Hello !!"
 
 if __name__ == "__main__":
-#    hello()
 #    plot_bar('Single threaded dd performance in each node (MB/sec, higher is better)',('dd-write','dd-read'), res_dicts)
 #    plt.plot()
     plot_bar('Hadoop Terasort time for 500 GB dataset (seconds, lower is better)', ('gen','sort'), res_dicts)
@@ -134,7 +129,5 @@ if __name__ == "__main__":
 #    plt.plot()
 #    plot_bar('Spark processing bandwidth per node (MB/sec, higher is better)', ('spark-wc-bw','spark-top50-bw'), res_dicts)
 #    plt.plot()
-
     plt.show()
-#    hello()
 
