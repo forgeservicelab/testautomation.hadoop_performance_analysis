@@ -1,0 +1,24 @@
+#FORGE, 11 * hadoop.medium, ext4, snappy
+FORGE-1 CSC
+sort: 28mins, 20sec
+spark-wc: 894 sec
+
+#FORGE, 11 * hadoop.medium, ext4, snappy, vm to phys 4+4+3
+FORGE-2 CSC
+gen:  6mins, 32sec
+sort: 32mins, 22sec
+
+#FORGE, 11 * hadoop.medium, ext4, snappy, vm to phys 5+5+1
+FORGE-3 CSC
+gen:  7mins, 48sec
+sort: 38mins, 56sec
+
+#FORGE-4 CSC replication (different JAR)
+FORGE-4 CSC repl (different JAR)
+gen: 8mins, 7sec
+sort: 51mins, 21sec
+
+#FORGE-5 CSC replication (different JAR)
+FORGE-5 CSC repl (Same JAR)
+gen: 8mins, 22sec
+sort: 36mins, 8sec
