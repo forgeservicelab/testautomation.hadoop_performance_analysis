@@ -1,7 +1,7 @@
 #FORGE, 11 * hadoop.medium, ext4, snappy
 FORGE-1 CSC
+gen:  5mins, 6sec
 sort: 28mins, 20sec
-spark-wc: 894 sec
 
 #FORGE, 11 * hadoop.medium, ext4, snappy, vm to phys 4+4+3
 FORGE-2 CSC
